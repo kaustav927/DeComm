@@ -2,12 +2,13 @@ const Koa = require('koa');
 const Router = require('@koa/router')
 const cors= require('@koa/cors')
 const ethers = require('ethers')
-const Payments = require('../build/contracts/Payments.json')
+const Payments = require('../frontend/src/contracts/Payments.json')
 const{Payment}=require('./database.js')
 
 const app = new Koa();
 const router = new Router();
 
+// move this to mongoDB in future, items are hardcoded for now lol
 const items={
     '1':{id:1, url:'http://UrlToDownloadItem1'},
     '2':{id:2, url:'http://UrlToDownloadItem2'}
