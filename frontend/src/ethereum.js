@@ -1,5 +1,5 @@
 import {ethers,Contract} from 'ethers';
-import PaymentProcessor from './contracts/Payments.json';
+import Payments from './contracts/Payments.json';
 import Dai from './contracts/Dai.json';
 
 const getBlockchain = () =>
